@@ -10,7 +10,7 @@ import Pages.HomePage;
 import Pages.MyAccountPage;
 import Pages.PaymentPage;
 
-public class TC_08_Checkout extends baseClass{
+public class TC_10_Checkout extends baseClass{
 
     @Test
     public void testCheckoutItem() {

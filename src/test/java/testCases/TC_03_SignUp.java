@@ -8,7 +8,7 @@ import Pages.CreateAccountPage;
 import Pages.HomePage;
 import Utilities.utilities;
 
-public class TC_01_SignUp extends baseClass {
+public class TC_03_SignUp extends baseClass {
 
     @Test
     public void testSignUp() {

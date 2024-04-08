@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/divya/IdeaProjects/BestBuyWebsite">
+        <classes>
+            <class name="testCases.TC_01_NavigatingtoBestBuy">
+                <methods>
+                    <include name="navigatingToBestBuy_Headless"/>
+                </methods>
+            </class>
+            <class name="testCases.TC_02_ValidateUrlIsNotBroken">
+                <methods>
+                    <include name="validateLink"/>
+                </methods>
+            </class>
+            <class name="testCases.TC_03_SignUp">
+                <methods>
+                    <include name="testSignUp"/>
+                </methods>
+            </class>
+            <class name="testCases.TC_04_Login">
+                <methods>
+                    <include name="testLoginValid"/>
+                    <include name="testLoginInValid"/>
+                </methods>
+            </class>
+            <class name="testCases.TC_05_ValidationMenuOptions">
+                <methods>
+                    <include name="validateMenuOptions"/>
+                </methods>
+            </class>
+            <class name="testCases.TC_06_ValidateBottomLinks">
+                <methods>
+                    <include name="validateBottomLinks"/>
+                </methods>
+            </class>
+            <class name="testCases.TC_07_SearchAddCart">
+                <methods>
+                    <include name="searchAddCart"/>
+                </methods>
+            </class>
+            <class name="testCases.TC_08_AddCartDepartment">
+                <methods>
+                    <include name="AddCartbyShopDepartment"/>
+                </methods>
+            </class>
+            <class name="testCases.TC_09_AddCartShopBrand">
+                <methods>
+                    <include name="testAddCartShopBrand"/>
+                </methods>
+            </class>
+            <class name="testCases.TC_10_Checkout">
+                <methods>
+                    <include name="testCheckoutItem"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

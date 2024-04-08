@@ -1,7 +1,6 @@
 
 package testCases;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,7 +8,7 @@ import BaseClass.baseClass;
 import Pages.HomePage;
 import Pages.MyAccountPage;
 
-public class TC_06_AddCartDepartment extends baseClass{
+public class TC_08_AddCartDepartment extends baseClass{
 
     @Test
     public void AddCartbyShopDepartment() {

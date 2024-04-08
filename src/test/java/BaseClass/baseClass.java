@@ -7,8 +7,10 @@ import java.util.ResourceBundle;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
 
 import Pages.InitialHomePage;
 
@@ -22,9 +24,7 @@ public class baseClass {
         rb = ResourceBundle.getBundle("data");
 
        // System.setProperty("webdriver.chrome.driver", "F:\\Selenium\\chromedriver-win64\\chromedriver.exe");
-
-        driver = new ChromeDriver();
-
+       driver = new ChromeDriver();
         driver.get(rb.getString("url"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.manage().deleteAllCookies();
@@ -33,7 +33,6 @@ public class baseClass {
         InitialHomePage ihp = new InitialHomePage(driver);
         ihp.clickUnitedStates();
         Thread.sleep(2000);
-
         try {
             assertEquals(driver.getTitle(),"Best Buy | Official Online Store | Shop Now & Save");
         }catch(Exception e) {

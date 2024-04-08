@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import BaseClass.baseClass;
 import Pages.HomePage;
 
-public class TC_04_SearchAddCart extends baseClass {
+public class TC_07_SearchAddCart extends baseClass {
 
     @Test
     public void searchAddCart() {

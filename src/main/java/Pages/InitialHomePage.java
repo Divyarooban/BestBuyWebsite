@@ -3,7 +3,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.ResourceBundle;
+
 public class InitialHomePage extends BasePage{
+    public ResourceBundle rb;
 
 
     public InitialHomePage(WebDriver driver) {
@@ -25,5 +28,8 @@ public class InitialHomePage extends BasePage{
     public void clickCanada() {
         canadalink.click();
     }
+
+
+
 
 }

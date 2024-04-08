@@ -8,7 +8,7 @@ import Pages.BestBuyBrands;
 import Pages.HomePage;
 import Pages.MyAccountPage;
 
-public class TC_07_AddCartShopBrand extends baseClass {
+public class TC_09_AddCartShopBrand extends baseClass {
 
     @Test
     public void testAddCartShopBrand() {

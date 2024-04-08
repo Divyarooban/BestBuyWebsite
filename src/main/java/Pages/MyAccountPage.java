@@ -44,6 +44,8 @@ public class MyAccountPage extends BasePage{
     @FindBy(xpath="//span[.='Cart']")
     WebElement cart;
 
+    @FindBy(xpath="//div[contains(text(),'Oops')]")
+    WebElement err;
 
     public void clickCart() {
         cart.click();
@@ -62,9 +64,13 @@ public class MyAccountPage extends BasePage{
     }
 
 
-   /* public void verifySuccessfulLogin() {
+    public void verifySuccessfulLogin() {
         usernameDispaly.click();
         assertEquals(logout.getText(),"Sign out");
-    }*/
+    }
+
+    public void verifyUnsuccessfulLogin(){
+        assertEquals(err.getText(),"Oops");
+    }
 
 }

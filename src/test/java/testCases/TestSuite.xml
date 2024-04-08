@@ -7,7 +7,16 @@
     </listeners>
     <test thread-count="5" verbose="2" name="Default test">
         <classes>
-            <class name="testCases.TC_02_Login"/>
+            <class name="testCases.TC_01_NavigatingtoBestBuy"/>
+            <class name="testCases.TC_02_ValidateUrlIsNotBroken"/>
+            <class name="testCases.TC_03_SignUp"/>
+            <class name="testCases.TC_04_Login"/>
+            <class name="testCases.TC_05_ValidationMenuOptions"/>
+            <class name="testCases.TC_06_ValidateBottomLinks"/>
+            <class name="testCases.TC_07_SearchAddCart"/>
+            <class name="testCases.TC_08_AddCartDepartment"/>
+            <class name="testCases.TC_09_AddCartShopBrand"/>
+            <class name="testCases.TC_10_Checkout"/>
         </classes>
     </test> <!-- Default test -->
 </suite> <!-- Default suite -->
